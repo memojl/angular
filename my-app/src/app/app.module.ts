@@ -7,14 +7,14 @@ import { AppComponent } from './app.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { FooterComponent } from './footer/footer.component';
 import { PruebasComponent } from './pruebas/pruebas.component';
-import { CuerpoComponent } from './cuerpo/cuerpo.component';
-import { ContenidoComponent } from './contenido/contenido.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 
 const routes: Routes = [
-  { path: 'contacto', component: ContactoComponent }
+  { path: 'contacto', component: ContactoComponent },
+  { path: 'nosotros', component: NosotrosComponent },
+  { path: '', component: InicioComponent, pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -23,8 +23,6 @@ const routes: Routes = [
     CabeceraComponent,
     FooterComponent,
     PruebasComponent,
-    CuerpoComponent,
-    ContenidoComponent,
     ContactoComponent,
     InicioComponent,
     NosotrosComponent
