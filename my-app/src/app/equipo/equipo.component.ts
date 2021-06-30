@@ -9,7 +9,7 @@ import { EquipoService } from '../equipo.service';
 })
 export class EquipoComponent implements OnInit {
 
-  equipo:any[] = [];
+  equipo:any;
 
   constructor(private ruta:ActivatedRoute, private _servicio:EquipoService) {
     
@@ -17,8 +17,7 @@ export class EquipoComponent implements OnInit {
       console.log(params['id']);
       this.equipo = this._servicio.obtenerId(params['id']);
       console.log(this.equipo);
-      //console.log(this.equipo[0].nombre);
-    })
+    });
 
   }
 
