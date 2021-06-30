@@ -21,6 +21,9 @@ const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'page404', component: Page404Component },
+  { path: 'inicio', component: InicioComponent },  
+  //{ path: '', redirectTo: '/inicio', pathMatch: 'full' },
+  //{ path: '**', component: Page404Component }
   { path: '', component: InicioComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '/page404', pathMatch: 'full' }
 ];

@@ -19,7 +19,7 @@ export class EquipoService {
   ];
 
   constructor() { 
-    console.log('Funcionando Servicio');
+    console.log('Funcionando Servicio'); //console.log(this.equipo[0]);
   }
 
   obtenerEquipo(){
